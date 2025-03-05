@@ -12,7 +12,7 @@ model = "open-mistral-7b"
 system_prompt = "You are an AI Assistant in a Discord Server."
 
 # We create the client instance.
-client = MistralAsyncClient(api_key QODyDynqBLoezFnhJnP1wvT5gSxji6SE)
+client = MistralAsyncClient(api_key "QODyDynqBLoezFnhJnP1wvT5gSxji6SE")
 
 # Discord bot settings.
 BOT_TOKEN = "9437d9edfff88896b8f5ed5b11fe43426149f8ac83b20ff9fa4bf457dbf7af28"
