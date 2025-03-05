@@ -7,7 +7,7 @@ import discord
 from discord.ext import commands
 
 # Mistral's API KEY and other settings.
-API_KEY = "YOUR_API_KEY"
+API_KEY = "QODyDynqBLoezFnhJnP1wvT5gSxji6SE"
 model = "open-mistral-7b"
 system_prompt = "You are an AI Assistant in a Discord Server."
 
@@ -15,7 +15,7 @@ system_prompt = "You are an AI Assistant in a Discord Server."
 client = MistralAsyncClient(api_key = API_KEY)
 
 # Discord bot settings.
-BOT_TOKEN = "YOUR_BOT_TOKEN"
+BOT_TOKEN = "9437d9edfff88896b8f5ed5b11fe43426149f8ac83b20ff9fa4bf457dbf7af28"
 prefix = "mistral!"
 
 # We create the bot's instance.
