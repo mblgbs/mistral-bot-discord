@@ -2,7 +2,7 @@ from mistralai.async_client import MistralAsyncClient
 from mistralai.models.chat_completion import ChatMessage
 import discord
 from discord.ext import commands
-client = MistralAsyncClient(api_key = "YOUR_API_KEY")
+client = MistralAsyncClient(api_key = QODyDynqBLoezFnhJnP1wvT5gSxji6SE )
 bot = commands.Bot(command_prefix = "mistral!", intents = discord.Intents.all())
 @bot.event
 async def on_ready():
@@ -14,4 +14,4 @@ async def on_message(message: discord.Message):
         messages = [ChatMessage(role = "system", content = "You are an AI Assistant in a Discord Server.")] + [ChatMessage(role = "assistant" if m.author == bot.user else "user", content = m.clean_content.replace('@'+bot.user.name, "Assistant")) async for m in message.channel.history(limit = 5)][::-1]
         response = await client.chat(model = "open-mistral-7b", messages = messages, max_tokens = 256)
         await message.reply(content = response.choices[0].message.content)
-bot.run("YOUR_BOT_TOKEN")
+bot.run(9437d9edfff88896b8f5ed5b11fe43426149f8ac83b20ff9fa4bf457dbf7af28)
