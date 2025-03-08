@@ -12,7 +12,7 @@ model = "open-mistral-7b"
 system_prompt = "You are an AI Assistant in a Discord Server."
 
 # We create the client instance.
-client = MistralAsyncClient(api_key "QODyDynqBLoezFnhJnP1wvT5gSxji6SE")
+client = MistralAsyncClient(api_key = "QODyDynqBLoezFnhJnP1wvT5gSxji6SE")
 
 # Discord bot settings.
 BOT_TOKEN = "9437d9edfff88896b8f5ed5b11fe43426149f8ac83b20ff9fa4bf457dbf7af28"
@@ -27,7 +27,7 @@ bot = commands.Bot(command_prefix = prefix, intents = intents)
 async def on_ready():
     await bot.change_presence(activity = discord.Activity(type = discord.ActivityType.listening, name = "the community!"))
     print("Bot is ready!!")
-    print("Here is the invite link:", f"https://discord.com/api/oauth2/authorize?client_id={bot.user.id}&permissions=0&scope=bot%20applications.commands")
+    print("Here is the invite link:", f"https://discord.com/api/oauth2/authorize?client_id=9437d9edfff88896b8f5ed5b11fe43426149f8ac83b20ff9fa4bf457dbf7af28&permissions=0&scope=bot%20applications.commands")
 
 # A simple function that cleans the Discord messages by removing the bot's mention and replacing it.
 def clean_message_content(message: discord.Message) -> str:
@@ -58,3 +58,4 @@ async def on_message(message: discord.Message):
 
 # Everything is ready, we can run the bot!
 bot.run(BOT_TOKEN)
+            
